@@ -54,6 +54,10 @@ add_executable(test_dct tests/test_dct.cpp)
 target_link_libraries(test_dct PRIVATE stegkit_core)
 add_test(NAME test_dct COMMAND test_dct)
 
+add_executable(test_dwt tests/test_dwt.cpp)
+target_link_libraries(test_dwt PRIVATE stegkit_core)
+add_test(NAME test_dwt COMMAND test_dwt)
+
 add_executable(test_container tests/test_container.cpp)
 target_link_libraries(test_container PRIVATE stegkit_core)
 add_test(NAME test_container COMMAND test_container)
