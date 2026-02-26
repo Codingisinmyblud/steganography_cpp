@@ -62,6 +62,18 @@ add_executable(test_bitstream tests/test_bitstream.cpp)
 target_link_libraries(test_bitstream PRIVATE stegkit_core)
 add_test(NAME test_bitstream COMMAND test_bitstream)
 
+add_executable(test_checksum tests/test_checksum.cpp)
+target_link_libraries(test_checksum PRIVATE stegkit_core)
+add_test(NAME test_checksum COMMAND test_checksum)
+
+add_executable(test_crypto tests/test_crypto.cpp)
+target_link_libraries(test_crypto PRIVATE stegkit_core)
+add_test(NAME test_crypto COMMAND test_crypto)
+
+add_executable(test_ecc tests/test_ecc.cpp)
+target_link_libraries(test_ecc PRIVATE stegkit_core)
+add_test(NAME test_ecc COMMAND test_ecc)
+
 # Tools
 add_executable(gen_noise tools/gen_noise.cpp)
 target_link_libraries(gen_noise PRIVATE stegkit_core)
